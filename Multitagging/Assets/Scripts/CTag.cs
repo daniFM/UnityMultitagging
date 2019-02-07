@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class CTag : MonoBehaviour
 {
-    public Dictionary<int, string> [] tags;
+    public string[] tags;
+    public int[] indices;
+    //public Dictionary<int, string> itags = new Dictionary<int, string>();
 }
