@@ -7,7 +7,6 @@ using UnityEditor;
 
 public class TagManager : EditorWindow
 {
-	string enumName = "CTag";
     int numTags = 3;
     bool error;
 
@@ -46,8 +45,6 @@ public class TagManager : EditorWindow
         {
             tags[i] = EditorGUILayout.TextField("Tag" + i, tags[i]);
         }
-
-		enumName = EditorGUILayout.TextField("enumName", enumName);
 
 		if (GUILayout.Button("Set Tags"))
 		{
