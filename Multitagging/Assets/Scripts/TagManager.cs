@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-//using System.IO;
 
 public class TagManager : EditorWindow
 {
@@ -36,8 +35,6 @@ public class TagManager : EditorWindow
 
     void OnGUI ()
 	{
-        //GUILayout.Label("Tag Manager", EditorStyles.boldLabel);
-
         numTags = EditorGUILayout.IntField("Tag number", numTags);
 
         if(tags.Length != numTags)
@@ -65,7 +62,7 @@ public class TagManager : EditorWindow
 
 	public void SetTags()
 	{
-        //Make sure there is no empty fields
+        //Make sure there are no empty fields
         for(int i = 0; i < tags.Length; ++i)
         {
             if(tags[i] == "")
@@ -83,22 +80,6 @@ public class TagManager : EditorWindow
         }
 
         //Debug.Log("Tags saved");
-
-        //string filePathAndName = "Assets/Scripts/Tags/" + enumName + ".cs";
-        ////The folder Scripts/Tags/ is expected to exist
-
-        //using ( StreamWriter streamWriter = new StreamWriter( filePathAndName ) )
-        //{
-        //	streamWriter.WriteLine( "public enum " + enumName );
-        //	streamWriter.WriteLine( "{" );
-        //	for( int i = 0; i < tags.Length; i++ )
-        //	{
-        //		streamWriter.WriteLine( "\t" + tags[i] + "," );
-        //	}
-        //	streamWriter.WriteLine( "}" );
-        //}
-        //AssetDatabase.Refresh();
-
     }
 }
 #endif

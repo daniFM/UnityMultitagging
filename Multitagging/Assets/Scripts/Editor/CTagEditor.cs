@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/// <summary>
+/// Custom editor for the CTag class.
+/// It shows the string arrays as if they were enums.
+/// </summary>
 [CustomEditor(typeof(CTag))]
-//[CanEditMultipleObjects]  --> Para que funcione hay que implementar el multieditado
+//[CanEditMultipleObjects]  //--> Needs multiediting to be implemented for it to really work.
 public class CTagEditor : Editor
 {
-    //int numTags;
     bool foldout = true;
 
     public override void OnInspectorGUI()
@@ -16,8 +19,6 @@ public class CTagEditor : Editor
         DrawDefaultInspector();
 
         CTag ctag = (CTag)target;
-
-        //EditorGUILayout.LabelField("Tags");
         
         foldout = EditorGUILayout.Foldout(foldout, "Tags");
         if(foldout)
@@ -26,8 +27,6 @@ public class CTagEditor : Editor
             EditorGUILayout.LabelField("Number of tags");
             ctag.numTags = EditorGUILayout.IntField(ctag.numTags);
             EditorGUILayout.EndHorizontal();
-
-            //EditorUtility.SetDirty(target);
 
             int numTags = ctag.numTags;
 
@@ -47,6 +46,7 @@ public class CTagEditor : Editor
             }
         }
 
+        // Makes sure al changes are saved
         Undo.RecordObject(ctag,"Update CTags");
     }
 }

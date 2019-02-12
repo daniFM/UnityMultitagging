@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Data class of the Custom Tag
+/// </summary>
 [AddComponentMenu("Custom/Custom Tag")]
 public class CTag : MonoBehaviour
 {
@@ -12,15 +15,10 @@ public class CTag : MonoBehaviour
     [HideInInspector]
     public int[] indices;
 
-    public bool HasTag(string tag)
+    public CTag()
     {
-        bool has = false;
-
-        for(int i = 0; i < tags.Length; ++i)
-        {
-            if(tags[i] == tag)
-                has = true;
-        }
-        return has;
+        numTags = 0;
+        tags = new string[0];
+        indices = new int[0];
     }
 }
