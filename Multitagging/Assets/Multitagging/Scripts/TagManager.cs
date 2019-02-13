@@ -1,4 +1,15 @@
-﻿#if UNITY_EDITOR
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * *\
+ *                                               *
+ * Copyright © 2019+ Daniel Fernández Marqués    *
+ *                                               *
+ * Distributed under the MIT license             *
+ * See LICENSE file                              *
+ *                                               *
+ * contact@danifm.com                            *
+ *                                               *
+\* * * * * * * * * * * * * * * * * * * * * * * * */
+
+#if UNITY_EDITOR
 using System;
 using System.Collections;
 using System.Collections.Generic;

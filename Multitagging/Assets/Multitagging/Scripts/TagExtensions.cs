@@ -1,4 +1,15 @@
-﻿using System;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * *\
+ *                                               *
+ * Copyright © 2019+ Daniel Fernández Marqués    *
+ *                                               *
+ * Distributed under the MIT license             *
+ * See LICENSE file                              *
+ *                                               *
+ * contact@danifm.com                            *
+ *                                               *
+\* * * * * * * * * * * * * * * * * * * * * * * * */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

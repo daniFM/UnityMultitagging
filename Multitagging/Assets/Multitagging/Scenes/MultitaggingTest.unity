@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 1259248256}
   - component: {fileID: 1259248255}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -299,11 +299,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf9ce178536a834085ca3911e10bc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numTags: 2
+  numTags: 3
   tags:
   - q
   - e
-  indices: 0000000002000000
+  - w
+  indices: 000000000200000001000000
 --- !u!54 &1259248257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -384,7 +385,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341401958
 GameObject:
@@ -399,7 +400,7 @@ GameObject:
   - component: {fileID: 1341401960}
   - component: {fileID: 1341401959}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,5 +487,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
